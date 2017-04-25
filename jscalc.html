@@ -1,9 +1,10 @@
 
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head>
-<form oninput="y.value=eval(x.value)" name="fLookup"  onSubmit="return Calc(x)">
-Equation: <input type="text"  value=""  autocomplete="off" name="x" placeholder="equation" autofocus required/> <input type="button" value="calc" /><br>
+<form oninput="y.value=eval(x.value)" method="post" name="fLookup"  onSubmit="return Calc(x)">
+Equation: <input type="text"  value=""  autocomplete="off" name="x" placeholder="equation" autofocus required/> <input type="submit" value="calc" /><br>
 Result:   <output name="y" ></output> <br>
 </form>
+<button type="button" onclick="return Calc(x)">Print</button> 
 <textarea id="res"></textarea>
 <script>
 function pow(n, p)
