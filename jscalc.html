@@ -27,7 +27,7 @@ console.log(x);
 }
 </script>
 <html>
-<form oninput="console.log(x.value)" method="post" name="fLookup"  onSubmit="return Calc(x)">
+<form oninput="console.log(x.innerText)" method="post" name="fLookup"  onSubmit="return Calc(x)">
 Equation: <input type="number"  autocomplete="off" name="x" type="text" placeholder="equation" autofocus required/> <input type="submit" value="calc" /><br>
 Result:   <output name="y" ></output> <br>
 </form>
