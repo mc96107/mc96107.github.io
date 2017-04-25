@@ -1,0 +1,106 @@
+
+<!-- saved from url=(0062)http://mc96107.duckdns.org:10001/websrv/engineering/ducts.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body><h2>﻿ducts</h2>
+<form onchange="qcalc.value=eval(q.value), a.value=eval(x.value)*eval(y.value)/10000, u.value=eval(q.value)/3600/a.value,
+Hp.value=4*eval(x.value)*eval(y.value)/(2*(eval(x.value)+eval(y.value))/100)/10000,
+Re.value=Hp.value*u.value/eval(n.value),
+lamda.value=1/(Math.pow(1.8*Math.log(6.9/Re.value+Math.pow((eval(k.value)/(Hp.value)/3.7),1.11))/Math.log(10),2)),
+frm.value=lamda.value/(Hp.value)*eval(ro.value)*Math.pow(u.value,2)/2,
+sol.value=frm.value*eval(l.value),
+exart.value=eval(ro.value)/2*eval(angles.value)*0.67*Math.pow(u.value,2),
+fritot.value=eval(exart.value)+eval(sol.value)
+u.value=Math.round(u.value*100)/100,
+Hp.value=Math.round(Hp.value*100)/100,
+Re.value=Math.round(Re.value),
+frm.value=Math.round(frm.value*100)/100,
+lamda.value=Math.round(lamda.value*10000)/10000,
+sol.value=Math.round(sol.value*100)/100,
+exart.value=Math.round(exart.value*100)/100,
+fritot.value=Math.round(fritot.value*100)/100" oninput="qcalc.value=eval(q.value), a.value=eval(x.value)*eval(y.value)/10000, u.value=eval(q.value)/3600/a.value,
+Hp.value=4*eval(x.value)*eval(y.value)/(2*(eval(x.value)+eval(y.value))/100)/10000,
+Re.value=Hp.value*u.value/eval(n.value),
+lamda.value=1/(Math.pow(1.8*Math.log(6.9/Re.value+Math.pow((eval(k.value)/(Hp.value)/3.7),1.11))/Math.log(10),2)),
+frm.value=lamda.value/(Hp.value)*eval(ro.value)*Math.pow(u.value,2)/2,
+sol.value=frm.value*eval(l.value),
+exart.value=eval(ro.value)/2*eval(angles.value)*0.67*Math.pow(u.value,2),
+fritot.value=eval(exart.value)+eval(sol.value)
+u.value=Math.round(u.value*100)/100,
+Hp.value=Math.round(Hp.value*100)/100,
+Re.value=Math.round(Re.value),
+frm.value=Math.round(frm.value*100)/100,
+lamda.value=Math.round(lamda.value*10000)/10000,
+sol.value=Math.round(sol.value*100)/100,
+exart.value=Math.round(exart.value*100)/100,
+fritot.value=Math.round(fritot.value*100)/100">
+Παροχή: <input type="text" autocomplete="off" name="q" value="" placeholder="παροχή" autofocus="" required=""> <output name="qcalc"></output> m3/h<br>
+Πλάτος: <input type="text" autocomplete="off" name="x" value="35" placeholder="πλάτος αεραγ." required=""> cm<br>
+Ύψος:   <input type="text" autocomplete="off" name="y" value="20" placeholder="ύψος αεραγ." required=""> cm<br>
+Μήκος:  <input type="text" autocomplete="off" name="l" value="1" placeholder="μήκος αεραγ." required=""> m<br>
+<div id="leptomeries" class="question undisplayed">
+ρ:  <select name="ro"><option value="1.2">αέρας</option><option value="998.2">νερό</option></select>    kg/m3<br>
+ν:  <select name="n"><option value=" 0.00001511">αέρας</option><option value="0.000001004">νερό</option></select>   <br>
+k:  <select name="k"><option value="0.00015">αεραγωγός</option></select>    kg/m3<br></div>
+Γωνίες: <input type="number" autocomplete="off" name="angles" value="0" placeholder="πλήθ. γωνιών" required="">    τεμ<br><div id="leptomeries2" class="question undisplayed">
+επιφάνεια:  <output name="a"></output> m2<br></div>
+ταχύτητα:   <output name="u"></output> m/s<br><div id="leptomeries3" class="question undisplayed">
+Hp: <output name="Hp"></output>    m<br>
+Re: <output name="Re"></output>    -<br>
+λ:  <output name="lamda"></output> -<br></div>
+Τριβές/m:  <output name="frm"></output>   Pa/m<br>
+Τριβές αεραγωγών:   <output name="sol"></output>   Pa<br>
+Τριβές εξαρτημάτων: <output name="exart"></output> Pa<br>
+Συνολικές τριβές:   <output name="fritot"></output>    Pa<br>
+</form>
+
+
+<hr>
+<h2>piping</h2>
+
+<form onchange="qcalc.value=eval(q.value), a.value=Math.PI*Math.pow(eval(d.value)/2000,2), u.value=eval(q.value)/3600/a.value,
+Re.value=eval(d.value)*u.value/eval(n.value)/1000,
+lamda.value=1/(Math.pow(1.8*Math.log(6.9/Re.value+Math.pow((eval(k.value)/(eval(d.value)/1000)/3.7),1.11))/Math.log(10),2)),
+frm.value=lamda.value/(eval(d.value)/1000)*eval(ro.value)*Math.pow(u.value,2)/2,
+sol.value=frm.value*eval(l.value),
+exart.value=eval(ro.value)/2*eval(angles.value)*0.67*Math.pow(u.value,2),
+fritot.value=eval(exart.value)+eval(sol.value)
+a.value=Math.round(a.value*10000)/10000,
+u.value=Math.round(u.value*100)/100,
+Re.value=Math.round(Re.value),
+frm.value=Math.round(frm.value*100)/100,
+lamda.value=Math.round(lamda.value*10000)/10000,
+sol.value=Math.round(sol.value*100)/100,
+exart.value=Math.round(exart.value*100)/100,
+fritot.value=Math.round(fritot.value*100)/100" oninput="qcalc.value=eval(q.value), a.value=Math.PI*Math.pow(eval(d.value)/2000,2), u.value=eval(q.value)/3600/a.value,
+Re.value=eval(d.value)*u.value/eval(n.value)/1000,
+lamda.value=1/(Math.pow(1.8*Math.log(6.9/Re.value+Math.pow((eval(k.value)/(eval(d.value)/1000)/3.7),1.11))/Math.log(10),2)),
+frm.value=lamda.value/(eval(d.value)/1000)*eval(ro.value)*Math.pow(u.value,2)/2,
+sol.value=frm.value*eval(l.value),
+exart.value=eval(ro.value)/2*eval(angles.value)*0.67*Math.pow(u.value,2),
+fritot.value=eval(exart.value)+eval(sol.value)
+a.value=Math.round(a.value*10000)/10000,
+u.value=Math.round(u.value*100)/100,
+Re.value=Math.round(Re.value),
+frm.value=Math.round(frm.value*100)/100,
+lamda.value=Math.round(lamda.value*10000)/10000,
+sol.value=Math.round(sol.value*100)/100,
+exart.value=Math.round(exart.value*100)/100,
+fritot.value=Math.round(fritot.value*100)/100">
+Παροχή: <input type="text" autocomplete="off" name="q" value="" placeholder="παροχή" autofocus="" required=""> <output name="qcalc"></output> m3/h<br>
+Διάμετρος:  <input type="text" autocomplete="off" name="d" value="35" placeholder="διάμετρος" autofocus="" required=""> mm<br>
+Μήκος:  <input type="text" autocomplete="off" name="l" value="1" placeholder="μήκος" required="">    m<br>
+ρ:  <select name="ro"><option value="998.2">νερό</option><option value="1.2">αέρας</option></select>    kg/m3<br>
+ν:  <select name="n"><option value="0.000001004">νερό</option><option value=" 0.00001511">αέρας</option></select>   <br>
+k:  <select name="k"><option value="0.0000015">χαλκοσωλήνας</option><option value="0.000045">χαλυβδοσωλήνας</option><option value="0.000007">πλαστική</option><option value="0.00009">αεραγωγός</option><option value="0.003">εύκαμ.αεραγ.</option></select>    kg/m3<br>
+Γωνίες: <input type="text" autocomplete="off" name="angles" value="0" placeholder="πλήθ. γωνιών" required="">    τεμ<br><div id="leptomeries4" class="question undisplayed">
+επιφάνεια:  <output name="a"></output> m2<br></div>
+ταχύτητα:   <output name="u"></output> m/s<br><div id="leptomeries5" class="question undisplayed">
+Re: <output name="Re"></output>    -<br>
+λ:  <output name="lamda"></output> -<br></div>
+Τριβές/m:   <output name="frm"></output>   Pa/m<br>
+Τριβές σωληνώσεων:  <output name="sol"></output>   Pa<br>
+Τριβές εξαρτημάτων: <output name="exart"></output> Pa<br>
+Συνολικές τριβές:   <output name="fritot"></output>    Pa<br>
+</form>
+
+
+</body></html>
