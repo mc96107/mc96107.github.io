@@ -1,3 +1,8 @@
+<html>
+<form oninput="y.value=eval(x.value)" method="post" name="fLookup"  onSubmit="return Calc(x)">
+Equation: <input type="number"  autocomplete="off" name="x" placeholder="equation" autofocus required/> <input type="submit" value="calc" /><br>
+Result:   <output name="y" ></output> <br>
+</form>
 <script>
 function pow(n, p)
 {
@@ -25,9 +30,4 @@ Calc=function(x){
 document.write(x.value+" = "+eval(x.value)+"<br>");
 }
 </script>
-<html>
-<form oninput="y.value=eval(x.value)" method="post" name="fLookup"  onSubmit="return Calc(x)">
-Equation: <input type="number"  autocomplete="off" name="x" placeholder="equation" autofocus required/> <input type="submit" value="calc" /><br>
-Result:   <output name="y" ></output> <br>
-</form>
 </html>
